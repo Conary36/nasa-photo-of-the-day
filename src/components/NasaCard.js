@@ -20,8 +20,8 @@ const Info = styled.p `
 
 `
 const Title = styled.h1`
-    animation: ${rotate360} infinite 120s linear;
-    font-family: 
+    animation: ${rotate360}  2s linear;
+    font-family: 'StyreneB', 'sans-serif';
 `
 const PicDiv = styled.div`
     width: 70%;
