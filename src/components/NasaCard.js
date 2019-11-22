@@ -1,5 +1,15 @@
 import React from "react";
-import styled from 'styled-components';
+import styled, {keyframes} from 'styled-components';
+
+
+const rotate360 = keyframes`
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+`
 
 const Info = styled.p `
     border: 3px groove blue;
@@ -8,6 +18,10 @@ const Info = styled.p `
     width: 80%;
 
 
+`
+const Title = styled.h1`
+    animation: ${rotate360} infinite 120s linear;
+    font-family: 
 `
 const PicDiv = styled.div`
     width: 70%;
@@ -35,7 +49,7 @@ const NasaCard = ({date, content, hdurl}) =>{
 
     return(
         <Container>
-            <h1>Vision of the Void</h1>
+            <Title>Vision of the Void</Title>
             <p>{date}</p>
             <Section>
                 <PicDiv><Img src={hdurl} alt='space pic'/></PicDiv>
