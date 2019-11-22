@@ -5,11 +5,13 @@ const Info = styled.p `
     border: 3px groove blue;
     margin: 0 auto;
     margin-top: 1rem;
-    width: 98%;
+    width: 80%;
+
 
 `
 const PicDiv = styled.div`
     width: 70%;
+    height: 50%;
 
 `
 const Img = styled.img`
