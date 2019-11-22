@@ -2,7 +2,10 @@ import React, {useState, useEffect} from "react";
 import axios from "axios";
 import NasaCard from "./NasaCard";
 
-export default function List_Cards (){
+
+ 
+
+export default function ListCards(){
     const [nasa, setNasa] = useState([]);
 
     useEffect(() =>{
@@ -12,12 +15,13 @@ export default function List_Cards (){
                 console.log(response.data);
                 setNasa(response.data);
         })
-
-            .catch(error => {console.log(error);
-
+            .catch(error => {
+                console.log(error);
             });
     }, []);
+
 console.log(nasa);
+
     return (
         <div className="space">
             {
